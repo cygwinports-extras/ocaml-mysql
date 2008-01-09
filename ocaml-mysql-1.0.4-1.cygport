@@ -1,0 +1,12 @@
+inherit ocaml
+
+DESCRIPTION="OCaml MySQL bindings"
+HOMEPAGE="http://raevnos.pennmush.org/code/ocaml-mysql/"
+SRC_URI="http://raevnos.pennmush.org/code/ocaml-mysql/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	LDFLAGS=-L/usr/lib/mysql cygconf
+	cygmake -j1 all opt
+}

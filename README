@@ -1,0 +1,66 @@
+ocaml-mysql
+------------------------------------------
+Bindings for interacting with MySQL databases from OCaml.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libmysqlclient15-5.0.45-1
+  ocaml-3.10.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://raevnos.pennmush.org/code/ocaml-mysql/
+
+Canonical download:
+  http://raevnos.pennmush.org/code/ocaml-mysql/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-mysql-1.0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-mysql-1.0.4-X.cygport all
+
+This will create:
+  /usr/src/ocaml-mysql-1.0.4-X-src.tar.bz2
+  /usr/src/ocaml-mysql-1.0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/mysql/META
+  /usr/lib/ocaml/3.10/mysql/libmysql_stubs.a
+  /usr/lib/ocaml/3.10/mysql/mysql.a
+  /usr/lib/ocaml/3.10/mysql/mysql.cma
+  /usr/lib/ocaml/3.10/mysql/mysql.cmi
+  /usr/lib/ocaml/3.10/mysql/mysql.cmx
+  /usr/lib/ocaml/3.10/mysql/mysql.cmxa
+  /usr/lib/ocaml/3.10/mysql/mysql.mli
+  /usr/lib/ocaml/3.10/stublibs/dllmysql_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dllmysql_stubs.so.owner
+  /usr/share/doc/ocaml-mysql-1.0.4/COPYING
+  /usr/share/doc/ocaml-mysql-1.0.4/Changes
+  /usr/share/doc/ocaml-mysql-1.0.4/README
+
+------------------
+
+Port Notes:
+
+----- version 1.0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

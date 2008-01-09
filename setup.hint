@@ -1,0 +1,4 @@
+category: Database OCaml
+requires: cygwin libmysqlclient15 ocaml
+sdesc: "OCaml MySQL bindings"
+ldesc: "Bindings for interacting with MySQL databases from OCaml."
